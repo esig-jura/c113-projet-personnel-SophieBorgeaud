@@ -4,9 +4,9 @@
 ## 1. 🎨 Présentation du projet
 
 ### Concept
-- Thème choisi : …
-- Public cible : …
-- Objectifs du site : …
+- Thème choisi : site fictif de la société de vente de papier Dunder Mifflin (tiré de la série The Office US).
+- Public cible : fans de la série, amateurs et amatrices de blagues internes à la série.
+- Objectifs du site : mettre en avant les différents personnages et la série en général, en faisant un site à l'humour décalé.
 
 ### Fonctionnalités prévues
 - Navigation : …
@@ -35,7 +35,7 @@
 ## 3. 🛠️ Outils et méthodologie
 
 ### Environnement de travail
-- IDE : …
+- IDE : WebStorm
 - Navigateurs de test : …
 - Versioning : Git + GitHub
 - Validation : Validator W3C, PageSpeed Insights, Wave
