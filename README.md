@@ -4,7 +4,7 @@
 ## 1. 🎨 Présentation du projet
 
 ### Concept
-- Thème choisi : site fictif de la société de vente de papier Dunder Mifflin (tiré de la série The Office US).
+- Thème choisi : site fictif de la société de vente de papier Dunder Mifflin (tiré de la série The Office).
 - Public cible : fans de la série, amateurs et amatrices de blagues internes à la série.
 - Objectifs du site : mettre en avant les différents personnages et la série en général, en faisant un site à l'humour décalé.
 
