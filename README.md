@@ -109,7 +109,7 @@
 - Concepts difficiles maîtrisés  
 
 ### Difficultés rencontrées
-- Problèmes techniques et solutions trouvées  
+- Problèmes techniques et solutions trouvées : J’ai d’abord créé une branche par page, mais je me suis rendu compte que ce n’était pas optimal pour mon projet. J’ai donc adopté une organisation par version et j'ai réservé les branches à des tests de fonctionnalités ou de design. 
 - Moments de blocage et dépassement  
 - Aide reçue et sources  
 
