@@ -18,7 +18,7 @@
 ## 2. 📚 Parcours d'apprentissage
 
 ### Ressources utilisées
-- Plateformes (OpenClassrooms, MDN, freeCodeCamp, etc.)
+- Plateforme utilisée : OpenClassrooms, cours "Créez votre site web avec HTML5 et CSS3"
 - Vidéos / tutoriels suivis
 - Articles ou documentations consultés
 
@@ -47,12 +47,12 @@
 
 ### Choix de design
 - Palette de couleurs :  
-  - Couleur principale : `#XXXXXX` – …
-  - Couleur secondaire : `#XXXXXX` – …
-  - Couleur d’accent : `#XXXXXX` – …
-  - Couleur de texte : `#XXXXXX` – …
-  - Couleur de fond : `#XXXXXX` – …
-- Lien vers palette générée : https://coolors.co/b57b41-1f57e6-eff4fb-272226-fff9b1
+  - Couleur principale : `#b57b41` – Brun doré, Chaleureux, rappelle le papier et les teintes vintage de la série.
+  - Couleur secondaire : `#1f57e6` – Bleu Dunder Mifflin, dynamique, couleur du logo et des chemises corporate.
+  - Couleur d’accent claire / de fond : `#eff4fb` – Blanc bleuté, doux et idéal pour les fonds de page.
+  - Couleur de texte : `#272226` – Gris très foncé, lisible, élégant, pas un noir pur.
+  - Couleur d'accent lumineuse : `#fff9b1` – Jaune pâle, pour les touches humoristiques (ex: Golden Ticket).
+  - Lien vers palette générée : https://coolors.co/b57b41-1f57e6-eff4fb-272226-fff9b1
 - Typographies :  
   - Titres : … (fichiers dans `/fonts`)  
   - Texte : … (fichiers dans `/fonts`)  
@@ -86,7 +86,7 @@
 ## 5. 🤖 Usage de l’IA (si applicable)
 
 ### IA utilisée
-- Nom et version : …
+- Nom et version : ChatGPT 5
 - Contexte : génération de code / debug / recherche / rédaction
 
 ### Utilisation détaillée
@@ -94,7 +94,7 @@
 - Explication et adaptation personnelle du code généré
 
 ### Proportion
-- Structure HTML : …% personnel / …% aidé
+- Structure HTML : 90% personnel / 10% aidé
 - CSS : …% personnel / …% aidé
 - Responsive : …% personnel
 - Tests et validation : 100% personnel
