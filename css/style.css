@@ -1,5 +1,53 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/open-sans-v44-latin-regular.woff2');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/oswald-v57-latin-regular.woff2');
+}
+img:hover {
+    opacity: 0.8;
+}
 body {
     background: #eff4fb;
     color: #272226;
+    text-underline: none;
+    font-family: 'Open Sans';
+
 }
+
+header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+/*Effet au survol du menu.*/
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #eff4fb;
+    opacity: 0.8;
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    border-top: 1px solid #eff4fb;
+    font-size: 0.9em;
+    color:  #eff4fb;
+    background: #272226;
+}
+
 

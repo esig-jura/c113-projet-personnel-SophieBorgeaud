@@ -18,7 +18,9 @@
 ## 2. 📚 Parcours d'apprentissage
 
 ### Ressources utilisées
-- Plateforme utilisée : OpenClassrooms, cours "Créez votre site web avec HTML5 et CSS3"
+- Plateforme utilisée :
+  -    OpenClassrooms, cours "Créez votre site web avec HTML5 et CSS3"    
+  -    Flexbox Froggy, jeu interactif pour maîtriser Flexbox
 - Vidéos / tutoriels suivis
 - Articles ou documentations consultés
 
