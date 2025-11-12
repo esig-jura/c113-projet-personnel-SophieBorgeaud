@@ -18,7 +18,7 @@ header {
     font-weight: 600;
     text-align: center;
 }
-img:hover {
+img a:hover {
     opacity: 0.8;
 }
 nav ul {

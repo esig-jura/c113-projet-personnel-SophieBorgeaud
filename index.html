@@ -9,35 +9,55 @@
     <title>Dunder Mifflin Paper Company</title>
     <!-- Auteur -->
     <meta name="author" content="Sophie Borgeaud">
+    <!-- Description de la page -->
+    <meta name="description"
+          content="Welcome to Dunder Mifflin Paper Company — premium paper, unbeatable service, and just the right amount of office drama.">
     <!-- Importer le css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-    <a href="index.html"> <img src="images/img_index/DunderMifflinColor.png" title="Dunder Mifflin Inc, Paper Company"
-                               alt="Dunder Mifflin Inc, Paper Company logo"> </a>
-    <h2>Limitless paper, in a paperless world.</h2>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/img_index/DunderMifflinColor.png"
+                 title="Dunder Mifflin Inc, Paper Company"
+                 alt="Dunder Mifflin Inc, Paper Company logo"
+                 loading="lazy">
+        </a>
+    </div>
+    <div class="slogan">Limitless paper, in a paperless world.</div>
+    <nav>
+        <ul>
+            <!-- aria-hidden="true" pour ne pas lire cet élément avec un lecteur d'écran. width="20" height="20" pour la
+            dimension. -->
+            <li><a href="page_our_company.html"> <img src="images/img_icons/building-2.svg" alt=""
+                                                      aria-hidden="true" width="20" height="20">Our
+                Company</a></li>
+            <li><a href="page_our_team.html"> <img src="images/img_icons/users.svg" alt="" aria-hidden="true"
+                                                   width="20" height="20">Meet Our Team</a>
+            </li>
+            <li><a href="page_our_products.html"> <img src="images/img_icons/shopping-cart.svg" alt=""
+                                                       aria-hidden="true" width="20" height="20">View Our
+                Products</a></li>
+            <li><a href="page_news.html"> <img src="images/img_icons/calendar-check.svg" alt=""
+                                               aria-hidden="true" width="20" height="20">Company
+                News & Events</a></li>
+        </ul>
+    </nav>
 </header>
-<nav>
-    <ul>
-        <li><a href="page_our_company.html"> <img src="images/img_icons/building-2.svg" alt="Building icon" > Our Company</a></li>
-        <li><a href="page_our_team.html"> <img src="images/img_icons/users.svg" alt="Team icon" > Meet Our Team</a></li>
-        <li><a href="page_our_products.html"> <img src="images/img_icons/shopping-cart.svg" alt="Shop icon" >View Our Products</a></li>
-        <li><a href="page_news.html"> <img src="images/img_icons/calendar-check.svg" alt="Calendar icon" >Company News & Events</a></li>
-    </ul>
-</nav>
 <main>
+    <h1>Welcome to Dunder Mifflin Paper Company</h1>
     <section>
-        <h3>Find the Golden Ticket!</h3>
+        <h2>Find the Golden Ticket!</h2>
         <img src="images/img_index/goldenTicket.JPEG" title="One of the five highly exclusive Golden Tickets"
              alt="Find the Golden Ticket!">
         <p>Somewhere inside our reams of paper lies your chance to win a <em>special Dunder Mifflin reward</em>. Five
-            Golden Tickets have been hidden in random shipments, each granting a 10% discount on your orders for an entire
+            Golden Tickets have been hidden in random shipments, each granting a 10% discount on your orders for an
+            entire
             year!. Because who said paper can’t be exciting?</p>
     </section>
-    >
     <section>
-        <h3>Meet our employee of the month: Dwight K. Schrute</h3>
+        <h2>Meet our employee of the month: Dwight K. Schrute</h2>
         <img src="images/img_index/dwightEmployeeOfTheMonth.jpg" title="Dwight K. Schrute"
              alt="Dwight K. Schrute as employee of the month.">
         <p>With another record-breaking sales month, Dwight has demonstrated the true meaning of dedication and focus.
@@ -48,7 +68,7 @@
         <p>Fun fact: Dwight has won this award 14 months in a row.</p>
     </section>
     <section>
-        <h3>Our bestsellers!</h3>
+        <h2>Our bestsellers!</h2>
         <a href="page_our_products.html#bulk">
             <img src="images/img_products/bulk.png" title="Bulk Office Pack – 2500 Sheets for High-Volume Needs."
                  alt="A large ream of 2500 sheets of 75g office paper, perfect for busy workplaces."> </a>
@@ -62,10 +82,14 @@
 </main>
 <footer>
     © 2025 Dunder Mifflin Paper Company – Scranton, PA
-    <br><a href="page_our_company.html"> <img src="images/img_icons/building-2.svg" alt="Building icon" >About Us</a> |
-    <a href="page_our_team.html"> <img src="images/img_icons/users.svg" alt="Team icon" >Our Team</a> |
-    <a href="page_our_products.html"><img src="images/img_icons/shopping-cart.svg" alt="Shop icon" >Products</a> |
-    <a href="page_news.html"><img src="images/img_icons/calendar-check.svg" alt="Calendar icon" >News</a> |
+    <br><a href="page_our_company.html"> <img src="images/img_icons/building-2.svg" alt="" aria-hidden="true" width="20"
+                                              height="20">About Us</a> |
+    <a href="page_our_team.html"> <img src="images/img_icons/users.svg" alt=""
+                                       aria-hidden="true" width="20" height="20">Our Team</a> |
+    <a href="page_our_products.html"><img src="images/img_icons/shopping-cart.svg" alt=""
+                                          aria-hidden="true" width="20" height="20">Products</a> |
+    <a href="page_news.html"><img src="images/img_icons/calendar-check.svg" alt=""
+                                  aria-hidden="true" width="20" height="20">News</a> |
     <br>“Limitless paper, in a paperless world.”
 </footer>
 </body>

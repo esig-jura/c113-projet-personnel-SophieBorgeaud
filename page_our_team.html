@@ -6,26 +6,45 @@
     <!-- Très important !!! Bloque le zoom automatique sur smartphones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- titre de la page -->
-    <title>Meet our team</title>
+    <title>Dunder Mifflin Paper Company</title>
     <!-- Auteur -->
     <meta name="author" content="Sophie Borgeaud">
+    <!-- Description de la page -->
+    <meta name="description"
+          content="Welcome to Dunder Mifflin Paper Company — premium paper, unbeatable service, and just the right amount of office drama.">
     <!-- Importer le css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-    <a href="index.html"> <img src="images/img_index/DunderMifflinColor.png" title="Dunder Mifflin Inc, Paper Company"
-                               alt="Dunder Mifflin Inc, Paper Company logo"> </a>
-    <h2>Limitless paper, in a paperless world.</h2>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/img_index/DunderMifflinColor.png"
+                 title="Dunder Mifflin Inc, Paper Company"
+                 alt="Dunder Mifflin Inc, Paper Company logo"
+                 loading="lazy">
+        </a>
+    </div>
+    <div class="slogan">Limitless paper, in a paperless world.</div>
+    <nav>
+        <ul>
+            <!-- aria-hidden="true" pour ne pas lire cet élément avec un lecteur d'écran. width="20" height="20" pour la
+            dimension. -->
+            <li><a href="page_our_company.html"> <img src="images/img_icons/building-2.svg" alt=""
+                                                      aria-hidden="true" width="20" height="20">Our
+                Company</a></li>
+            <li><a href="page_our_team.html"> <img src="images/img_icons/users.svg" alt="" aria-hidden="true"
+                                                   width="20" height="20">Meet Our Team</a>
+            </li>
+            <li><a href="page_our_products.html"> <img src="images/img_icons/shopping-cart.svg" alt=""
+                                                       aria-hidden="true" width="20" height="20">View Our
+                Products</a></li>
+            <li><a href="page_news.html"> <img src="images/img_icons/calendar-check.svg" alt=""
+                                               aria-hidden="true" width="20" height="20">Company
+                News & Events</a></li>
+        </ul>
+    </nav>
 </header>
-<nav>
-    <ul>
-        <li><a href="page_our_company.html"> <img src="images/img_icons/building-2.svg" alt="Building icon" > Our Company</a></li>
-        <li><a href="page_our_team.html"> <img src="images/img_icons/users.svg" alt="Team icon" > Meet Our Team</a></li>
-        <li><a href="page_our_products.html"> <img src="images/img_icons/shopping-cart.svg" alt="Shop icon" >View Our Products</a></li>
-        <li><a href="page_news.html"> <img src="images/img_icons/calendar-check.svg" alt="Calendar icon" >Company News & Events</a></li>
-    </ul>
-</nav>
 <main>
     <section>
         <h2>Meet Our Team</h2>
