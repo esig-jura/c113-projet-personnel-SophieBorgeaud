@@ -6,31 +6,75 @@
     <!-- Très important !!! Bloque le zoom automatique sur smartphones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- titre de la page -->
-    <title>Watch our latest news</title>
+    <title>Dunder Mifflin Paper Company</title>
     <!-- Auteur -->
     <meta name="author" content="Sophie Borgeaud">
+    <!-- Description de la page -->
+    <meta name="description"
+          content="Welcome to Dunder Mifflin Paper Company — premium paper, unbeatable service, and just the right amount of office drama.">
     <!-- Importer le css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <a href="index.html"> <img src="images/img_index/DunderMifflinColor.png" title="Dunder Mifflin Inc, Paper Company"
-                               alt="Dunder Mifflin Inc, Paper Company logo"> </a>
-    <h2>Limitless paper, in a paperless world.</h2>
-</header>
-<nav>
-    <ul>
-        <li><a href="page_our_company.html">Our Company</a></li>
-        <li><a href="page_our_team.html">Meet Our Team</a></li>
-        <li><a href="page_our_products.html">View Our Products</a></li>
-        <li><a href="page_news.html">Company News & Events</a></li>
-    </ul>
-</nav>
-<main>
-    <section>
+<header class="site-header">
+    <div class="header-top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/img_index/DunderMifflinColor.png"
+                     title="Dunder Mifflin Inc, Paper Company"
+                     alt="Dunder Mifflin Inc, Paper Company logo"
+                     loading="lazy">
+            </a>
+        </div>
+        <p class="slogan">Limitless paper, in a paperless world.</p>
+    </div>
 
+    <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+            <!-- aria-hidden="true" pour ne pas lire cet élément avec un lecteur d'écran. width="20" height="20" pour la dimension. -->
+            <li>
+                <a href="page_our_company.html">
+                    <img src="images/img_icons/building-2.svg" alt="" aria-hidden="true" width="20" height="20">
+                    <span>Our Company</span>
+                </a>
+            </li>
+            <li>
+                <a href="page_our_team.html">
+                    <img src="images/img_icons/users.svg" alt="" aria-hidden="true" width="20" height="20">
+                    <span>Meet Our Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="page_our_products.html">
+                    <img src="images/img_icons/shopping-cart.svg" alt="" aria-hidden="true" width="20" height="20">
+                    <span>View Our Products</span>
+                </a>
+            </li>
+            <li>
+                <a href="page_news.html">
+                    <img src="images/img_icons/calendar-check.svg" alt="" aria-hidden="true" width="20" height="20">
+                    <span>Company News &amp; Events</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="coming-soon-page">
+    <section class="coming-soon-message">
+        <h1>Coming Soon</h1>
+        <p>
+            This page is currently under construction.
+            Michael promised he would finish it last week… then Dwight said he had to “prioritize beet harvesting season.”
+            Long story short: content is on its way.
+        </p>
+        <p>
+            Please check back soon — or contact us if you need urgent paper-related information.<br>
+            (We know paper emergencies happen.)
+        </p>
     </section>
 </main>
+
 <footer>
     © 2025 Dunder Mifflin Paper Company – Scranton, PA
     <br><a href="page_our_company.html">About Us</a> |

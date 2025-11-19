@@ -1,60 +1,368 @@
+/* Polices locales */
 @font-face {
     font-family: 'Open Sans';
-    src: url('fonts/open-sans-v44-latin-regular.woff2') format("woff2");
+    src: url('../fonts/open-sans-v44-latin-regular.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Oswald';
-    src: url('fonts/oswald-v57-latin-regular.woff2') format("woff2");
+    src: url('../fonts/oswald-v57-latin-regular.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Variables globales utilisées dans le reste du CSS : couleurs, polices d'écritures, espacements */
+:root {
+    /* Palette */
+    --color-primary: #b57b41;      /* Brun doré */
+    --color-secondary: #1f57e6;    /* Bleu Dunder Mifflin */
+    --color-bg: #eff4fb;           /* Blanc bleuté */
+    --color-text: #272226;         /* Gris très foncé */
+    --color-accent: #fff9b1;       /* Jaune pâle (Golden Ticket) */
+
+    --color-white: #fff;
+    --color-border: #d1d9e6;
+
+    /* Polices */
+    --font-base: "Open Sans", system-ui, sans-serif;
+    --font-heading: "Oswald", "Open Sans", sans-serif;
+
+    /* Espacements */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+
+    /* Divers */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+
+    --shadow-soft: 0 4px 8px rgba(0,0,0,0.06);
+    --transition-fast: 0.2s ease;
+}
+
+/* Reset basique */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background: #eff4fb;
-    color: #272226;
-    text-underline: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-base);
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
 }
 
-header {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2em;
-    font-weight: 600;
-    text-align: center;
+/* Limite la largeur */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md);
 }
 
-img a:hover {
-    opacity: 0.8;
+/* Titres */
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+h1 { font-size: 2rem; margin-bottom: var(--space-md); }
+h2 { font-size: 1.5rem; margin-bottom: var(--space-sm); }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.1rem; }
+
+/* Paragraphes */
+p { margin: 0 0 var(--space-md); }
+
+/* Liens */
+a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    width: auto;
+    display: block;
 }
 
-nav ul {
-    list-style: none;
+/* Header et navigation principale */
+
+header,
+.site-header {
+    background: var(--color-secondary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+}
+
+/* Contenu du header */
+.header-top {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-md);
     display: flex;
-    justify-content: center;
-    gap: 2em;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1em;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*Effet au survol du menu.*/
-nav a:hover {
-    text-decoration-color: #eff4fb;
-    opacity: 0.8;
+.slogan {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: .05em;
 }
 
+/* NNavigation */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.main-nav a {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    color: white;
+}
+
+.main-nav a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.main-nav a.active {
+    background: var(--color-primary);
+}
+
+/* Footer */
 footer {
+    background: #111827;
+    color: var(--color-white);
     text-align: center;
-    margin-top: 40px;
-    padding: 15px 0;
-    border-top: 1px solid #eff4fb;
-    font-size: 0.9em;
-    color:  #eff4fb;
-    background: #272226;
+    padding: var(--space-lg) var(--space-md);
+    font-size: 0.9rem;
+    margin-top: var(--space-xl);
 }
 
+footer a {
+    color: var(--color-accent);
+}
 
+footer a:hover {
+    color: white;
+}
+
+/* Page d'accueil -> index.html */
+
+.homepage section {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-soft);
+}
+
+.promo-section {
+    background: var(--color-accent);
+    border-left: 4px solid var(--color-primary);
+}
+
+/* Grille des bestsellers */
+.bestsellers-grid {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.product-link {
+    background: var(--color-bg);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-fast);
+}
+
+.product-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+/* Page "Our company" */
+
+.company-section {
+    background: var(--color-white);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: var(--space-lg);
+}
+
+.office-gallery {
+    display: grid;
+    gap: var(--space-md);
+}
+
+/* Page "Our products" */
+
+.products-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.products-nav a {
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--color-border);
+    background: white;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+}
+
+.products-nav a:hover {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.product-category {
+    background: white;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: var(--space-lg);
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--space-md);
+}
+
+.product-item {
+    background: var(--color-bg);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+
+/* Page "Our team" */
+
+.team-intro {
+    background: white;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: var(--space-lg);
+}
+
+.employee-card {
+    background: white;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    margin-top: var(--space-md);
+    transition: var(--transition-fast);
+}
+
+.employee-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+}
+
+/* Page "News" qui n'est pas terminée -> coming soon... */
+
+.coming-soon-page {
+    text-align: center;
+    padding: var(--space-xl) var(--space-md);
+}
+
+.coming-soon-message {
+    background: white;
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Responsive */
+
+/* Sur tablette */
+@media (min-width: 768px) {
+
+    .header-top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .bestsellers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .office-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .role-sales,
+    .role-accounting,
+    .role-support,
+    .role-other {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+}
+
+/* Ordinateur */
+@media (min-width: 1024px) {
+
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .role-sales,
+    .role-accounting,
+    .role-support,
+    .role-other {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team-intro {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        gap: var(--space-lg);
+        align-items: center;
+    }
+}
