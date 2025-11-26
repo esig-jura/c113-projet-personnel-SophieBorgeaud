@@ -222,6 +222,19 @@ footer a:hover {
     overflow: hidden;
     box-shadow: var(--shadow-soft);
     transition: var(--transition-fast);
+
+    display: flex;
+    justify-content: center;   /* centre verticalement */
+    align-items: center;       /* centre horizontalement */
+
+    min-height: 260px;         /* hauteur de la carte */
+    padding: var(--space-md);  /* pour éviter que l’image colle aux bords */
+}
+
+.product-link img {
+    max-height: 100%;
+    width: auto;
+    display: block;
 }
 
 .product-link:hover {
@@ -287,6 +300,16 @@ footer a:hover {
     padding: var(--space-md);
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item img {
+    margin: auto;          /* centre verticalement */
+    max-height: 240px;     /* espace respirant */
+    width: auto;
+    display: block;
 }
 
 /* Page "Our team" */
