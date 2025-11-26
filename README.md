@@ -9,9 +9,24 @@
 - Objectifs du site : mettre en avant les différents personnages et la série en général, en faisant un site à l'humour décalé.
 
 ### Fonctionnalités prévues
-- Navigation : …
-- Sections principales : …
-- Contenus proposés : …
+- Navigation : 
+  - Menu principal accessible depuis toutes les pages en cliquant sur le logo du site.
+  - Navigation pensée mobile-first, affichée en colonne sur petits écrans puis en ligne sur tablette/desktop.
+  - Mise en évidence de la page active via une classe .active.
+  
+- Sections principales : 
+  - Page d’accueil : présentation générale, section promotionnelle “Golden Ticket”, employé du mois, best-sellers de la marque.
+  - Our Company : texte de présentation, fondateurs, galerie d’images des bureaux de Dunder Mifflin.
+  - Our Products : navigation par catégories, présentation des produits sous forme de cartes.
+  - Our Team : introduction à l’équipe et cartes des employés classées par départements.
+  - News : page “Coming soon” avec un message centralisé.
+  
+- Contenus proposés :
+  - Textes inspirés de l’univers de The Office.
+  - Images locales (produits, bureaux, employés), optimisées pour l’affichage responsive.
+  - Cartes interactives avec ombres, hover et transitions visuelles.
+  - Mise en page en Flexbox et Grid pour organiser les sections de manière claire et moderne.
+  - Palette de couleurs personnalisée basée sur l’identité visuelle Dunder Mifflin.
 
 ---
 
@@ -49,16 +64,23 @@
 
 ### Choix de design
 - Palette de couleurs :  
-  - Couleur principale : `#b57b41` – Brun doré, Chaleureux, rappelle le papier et les teintes vintage de la série.
-  - Couleur secondaire : `#1f57e6` – Bleu Dunder Mifflin, dynamique, couleur du logo et des chemises corporate.
+  - Couleur principale : `#b57b41` – Brun doré, chaleureux, rappelle le papier et les teintes vintage de la série.
+  - Couleur secondaire : `#1f57e6` – Bleu Dunder Mifflin, dynamique, couleur du logo original.
   - Couleur d’accent claire / de fond : `#eff4fb` – Blanc bleuté, doux et idéal pour les fonds de page.
   - Couleur de texte : `#272226` – Gris très foncé, lisible, élégant, pas un noir pur.
   - Couleur d'accent lumineuse : `#fff9b1` – Jaune pâle, pour les touches humoristiques (ex: Golden Ticket).
   - Lien vers palette générée : https://coolors.co/b57b41-1f57e6-eff4fb-272226-fff9b1
+###
 - Typographies :  
-  - Titres : … (fichiers dans `/fonts`)  
-  - Texte : … (fichiers dans `/fonts`)  
-
+  - Titres : Oswald
+    - Importée en local via @font-face
+    - Fichier utilisé : /fonts/oswald-v57-latin-regular.woff2
+    - Appliquée aux éléments h1, h2, h3, h4 pour créer une hiérarchie visuelle claire et dynamique.
+###
+  - Texte : Open Sans
+    - Importée en local via @font-face
+    - Fichier utilisé : /fonts/open-sans-v44-latin-regular.woff2
+    - Utilisée comme police principale pour tout le corps du texte (body), lisible et adaptée à un site moderne.
 ---
 
 ## 4. ✅ Tests et validation
@@ -97,8 +119,8 @@
 
 ### Proportion
 - Structure HTML : 90% personnel / 10% aidé
-- CSS : …% personnel / …% aidé
-- Responsive : …% personnel
+- CSS : 40% personnel / 60% aidé
+- Responsive : 50% personnel
 - Tests et validation : 100% personnel
 
 ---
@@ -116,11 +138,11 @@
 - Aide reçue et sources  
 
 ### Réussites et fiertés
-- Aspects du projet dont je suis fier  
-- Progrès constatés depuis le début  
-- Envies de développement futur  
+- Aspects du projet dont je suis fière :
+- Progrès constatés depuis le début :  
+- Envies de développement futur :  
 
 ### Améliorations possibles
-- Ce que j’ajouterais avec plus de temps  
-- Fonctionnalités bonus envisagées  
-- Compétences à approfondir  
+- Ce que j’ajouterais avec plus de temps : 
+- Fonctionnalités bonus envisagées : 
+- Compétences à approfondir :  
