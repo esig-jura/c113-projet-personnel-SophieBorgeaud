@@ -53,7 +53,7 @@
 
 ### Environnement de travail
 - IDE : WebStorm
-- Navigateurs de test : …
+- Navigateurs de test : Firefox, 
 - Versioning : Git + GitHub
 - Validation : Validator W3C, PageSpeed Insights, Wave
 
@@ -95,7 +95,7 @@
   - SEO : …/100  
 
 ### Compatibilité
-- Navigateurs testés : Chrome …, Firefox …, Safari …
+- Navigateurs testés : Chrome …, Firefox ✅, Safari …
 - Appareils testés : mobile, tablette, desktop
 
 ### Accessibilité
@@ -114,11 +114,11 @@
 - Contexte : génération de code / debug / recherche / rédaction
 
 ### Utilisation détaillée
-- Contenu généré avec l’IA : …
+- Contenu généré avec l’IA : j'ai généré la majorité du contenu des textes en anglais pour mon HTML, mais je m'en suis servie majoritairement comme outil de correction et de conseil pour cette partie HTML. En CSS, 
 - Explication et adaptation personnelle du code généré
 
 ### Proportion
-- Structure HTML : 90% personnel / 10% aidé
+- Structure HTML : 80% personnel / 20% aidé
 - CSS : 40% personnel / 60% aidé
 - Responsive : 50% personnel
 - Tests et validation : 100% personnel
@@ -135,7 +135,7 @@
 ### Difficultés rencontrées
 - Problèmes techniques et solutions trouvées : J’ai d’abord créé une branche par page, mais je me suis rendu compte que ce n’était pas optimal pour mon projet. J’ai donc adopté une organisation par version et j'ai réservé les branches à des tests de fonctionnalités ou de design. 
 - Moments de blocage et dépassement  
-- Aide reçue et sources  
+- Aide reçue et sources : IA (ChatGPT),    
 
 ### Réussites et fiertés
 - Aspects du projet dont je suis fière :
