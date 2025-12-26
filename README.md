@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7MWuFRnf)
 # Mon Projet Web
 
 ## 1. 🎨 Présentation du projet
@@ -34,26 +33,27 @@
 
 ### Ressources utilisées
 - Plateforme utilisée :
-  -    OpenClassrooms, cours "Créez votre site web avec HTML5 et CSS3"    
-  -    Flexbox Froggy, jeu interactif pour maîtriser Flexbox
+  -    OpenClassrooms, cours "Créez votre site web avec HTML5 et CSS3"
 - Vidéos / tutoriels suivis
-- Articles ou documentations consultés
+  -   Flexbox Froggy, jeu interactif pour maîtriser Flexbox
 
 ### Progression
-- Semaine 4 : …
-- Semaine 6 : …
-- Semaine 8 : …
-- Semaine 10 : …
-- Semaine 11 : …
-- Semaine 12 : …
+- Semaines 3–4 : choix du thème du site web, définition de la palette de couleurs, réflexion sur l’identité visuelle, premiers croquis / idées de structure
+- Semaines 5–6 : début du projet site web, création du dépôt GitHub, clonage du projet dans WebStorm, première page HTML simple
+- Semaines 7–8 : mise en place de l’arborescence du projet, création des pages HTML principales, structure HTML sémantique, navigation fonctionnelle entre les pages
+- Semaines 9–10 : intégration complète des contenus textuels, ajout des images, attributs alt et title, début de la feuille de style CSS
+- Semaines 11–12 : CSS global (couleurs, typographies, espacements), mise en page avec Flexbox et Grid, menu horizontal, début du responsive design
+- Semaines 13–14 : responsive design complet, adaptation mobile / tablette / desktop, amélioration de l’expérience utilisateur, harmonisation graphique sur toutes les pages
+- Semaine 15 – Rendu final: optimisation du CSS, validation HTML et CSS, mise à jour du README
 
+Publication finale du site
 ---
 
 ## 3. 🛠️ Outils et méthodologie
 
 ### Environnement de travail
 - IDE : WebStorm
-- Navigateurs de test : Firefox, 
+- Navigateurs de test : Firefox, Chrome, Safari
 - Versioning : Git + GitHub
 - Validation : Validator W3C, PageSpeed Insights, Wave
 
@@ -114,8 +114,12 @@
 - Contexte : génération de code / debug / recherche / rédaction
 
 ### Utilisation détaillée
-- Contenu généré avec l’IA : j'ai généré la majorité du contenu des textes en anglais pour mon HTML, mais je m'en suis servie majoritairement comme outil de correction et de conseil pour cette partie HTML. En CSS, 
+- Contenu généré avec l’IA : 
+  - j'ai généré la majorité du contenu des textes en anglais pour mon HTML, mais je m'en suis servie majoritairement comme outil de correction et de conseil pour cette partie HTML. En CSS, je me suis appuyée sur l’IA pour comprendre la mise en page, les sélecteurs et le responsive, puis j’ai adapté le code à mon projet.
 - Explication et adaptation personnelle du code généré
+  - pour le HTML, l’intelligence artificielle m’a principalement servi à vérifier la validité et la cohérence de mon code, ainsi qu’à générer et reformuler les contenus textuels en anglais. La structure des pages, l’organisation sémantique et l’intégration des éléments ont été réalisées par moi-même, avec l’IA utilisée comme outil de contrôle et d’aide à la rédaction.
+  - pour le CSS, l’IA m’a aidée à comprendre certaines logiques de mise en page et de responsive design, notamment avec flexbox, grid et les media queries. Les propositions ont ensuite été adaptées, simplifiées ou modifiées afin de correspondre à l’identité visuelle du site et à mes choix personnels.
+  - l’utilisation de l’IA s’inscrit donc dans une démarche d’apprentissage et de compréhension des concepts, et non comme une solution clé en main.
 
 ### Proportion
 - Structure HTML : 80% personnel / 20% aidé
@@ -128,21 +132,33 @@
 ## 6. 🎯 Bilan personnel
 
 ### Ce que j’ai appris
-- Compétences techniques acquises  
-- Découvertes surprenantes  
-- Concepts difficiles maîtrisés  
+- Compétences techniques acquises : 
+  - bases du HTML5 et du CSS3, structuration sémantique d’une page web, mise en page avec Flexbox et Grid, gestion des images, liens et navigation, publication d’un site avec GitHub Pages  
+- Découvertes surprenantes : 
+  - l’importance de la structure HTML avant le design, le rôle central du CSS dans la lisibilité et l’ergonomie, l’impact du poids des images sur les performances d’un site, l’utilité des attributs alt et title pour l’accessibilité 
+- Concepts difficiles maîtrisés : 
+  - compréhension de la relation HTML / CSS, sélecteurs CSS et hiérarchie des styles, responsive design et media queries, organisation du code et de l’arborescence du projet   
 
 ### Difficultés rencontrées
-- Problèmes techniques et solutions trouvées : J’ai d’abord créé une branche par page, mais je me suis rendu compte que ce n’était pas optimal pour mon projet. J’ai donc adopté une organisation par version et j'ai réservé les branches à des tests de fonctionnalités ou de design. 
+- Problèmes techniques et solutions trouvées : 
+  - gestion de git et des branches, avec une première organisation par page qui s’est révélée peu adaptée, puis adoption d’une organisation par version et utilisation de la branche main pour le développement principal.
 - Moments de blocage et dépassement  
-- Aide reçue et sources : IA (ChatGPT),    
+  - blocages lors de la compréhension du lien entre html et css, notamment pour les sélecteurs, la mise en page et le responsive design, dépassés par des essais progressifs et une meilleure structuration du code.
+- Aide reçue et sources : 
+  - aide reçue principalement via l’intelligence artificielle (chatgpt), complétée par mes prises de notes des cours OpenClassrooms et de l'aide demandée à des camarades de classe.
 
 ### Réussites et fiertés
 - Aspects du projet dont je suis fière :
+  - satisfaction d’avoir conçu un site web complet et fonctionnel en partant de zéro, avec une structure claire, une navigation cohérente et une identité visuelle aboutie.
 - Progrès constatés depuis le début :  
+  - progression marquée depuis le début du module, avec une meilleure compréhension du html, du css, de la logique de mise en page et de l’organisation globale d’un projet web.
 - Envies de développement futur :  
+  - envie de continuer à développer mes compétences en web, notamment en approfondissant le css, les animations, l’accessibilité et, à terme, l’ajout de fonctionnalités interactives avec javascript.
 
 ### Améliorations possibles
 - Ce que j’ajouterais avec plus de temps : 
+  - avec plus de temps, j’ajouterais davantage de contenu interactif, une mise en page encore plus aboutie et des animations légères pour enrichir l’expérience utilisateur. Je terminerais la page "News"
 - Fonctionnalités bonus envisagées : 
-- Compétences à approfondir :  
+  - des fonctionnalités bonus pourraient inclure des effets de survol plus avancés, des transitions animées, ainsi qu’une navigation plus dynamique entre les sections.
+- Compétences à approfondir :
+  - les compétences à approfondir concernent principalement le css avancé, l’accessibilité web, le responsive design plus fin et l’introduction progressive de javascript pour rendre le site plus interactif.
