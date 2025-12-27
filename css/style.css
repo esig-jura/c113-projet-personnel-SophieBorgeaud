@@ -186,6 +186,12 @@ footer a:hover {
     color: white;
 }
 
+.footer-quote {
+    max-width: none;
+    margin: 1.5rem auto 0;
+    text-align: center;
+}
+
 /* Page d'accueil -> index.html */
 
 .homepage section {
@@ -194,6 +200,10 @@ footer a:hover {
     margin-bottom: 1.5rem;
     padding: 1rem;
     box-shadow: var(--shadow-soft);
+}
+
+.dwight-employee {
+    margin: 0 auto 1.5rem;
 }
 
 .promo-section {
@@ -236,16 +246,21 @@ footer a:hover {
 /* Page "Our company" */
 
 .company-section {
-    background: var(--color-white);
+    background: white;
     padding: 1rem;
-    border-radius: var(--radius-md);
+    border-radius: 1rem;          /* comme .product-category */
     box-shadow: var(--shadow-soft);
     margin-bottom: 1.5rem;
 }
 
+.company-section img {
+    margin: 1rem auto 0;
+    border-radius: var(--radius-md);
+}
+
 .office-gallery {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 /* Page "Our products" */
@@ -291,7 +306,6 @@ footer a:hover {
     padding: 1rem;
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
-
     display: flex;
     flex-direction: column;
 }
@@ -304,27 +318,62 @@ footer a:hover {
 }
 
 /* Page "Our team" */
-
 .team-intro {
     background: white;
     padding: 1rem;
-    border-radius: var(--radius-md);
+    border-radius: 1rem;
     box-shadow: var(--shadow-soft);
     margin-bottom: 1.5rem;
 }
 
-.employee-card {
+.team-section {
     background: white;
     padding: 1rem;
-    border-radius: var(--radius-md);
+    border-radius: 1rem;
     box-shadow: var(--shadow-soft);
-    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+    /* Grille interne pour placer les employee-card */
+    display: grid;
+    gap: 1rem;
+}
+
+.team-section > h2 {
+    margin: 0 0 1rem;
+    grid-column: 1 / -1;
+}
+
+/* Harmoniser les paragraphes dans ces cartes (évite le max-width: 65ch global) */
+.team-intro p, .team-section p, .employee-card p {
+    max-width: none;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.employee-card {
+    background: var(--color-bg);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-soft);
     transition: 0.2s ease;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .employee-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+}
+
+/* Images employées : tailles maximales */
+.employee-card img {
+    margin: 0 auto 1rem;
+    max-height: 260px;
+    width: auto;
+    object-fit: cover;
+    display: block;
 }
 
 /* Page "News" que je n'ai pas terminée -> coming soon... */
