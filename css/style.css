@@ -16,21 +16,30 @@
 /* Variables globales utilisées dans le reste du CSS : couleurs, polices d'écritures, espacements */
 :root {
     /* Palette */
-    --color-primary: #b57b41;      /* Brun doré */
-    --color-secondary: #1f57e6;    /* Bleu Dunder Mifflin */
-    --color-bg: #eff4fb;           /* Blanc bleuté */
-    --color-text: #272226;         /* Gris très foncé */
-    --color-accent: #fff9b1;       /* Jaune pâle (Golden Ticket) */
+    --color-primary: #b57b41; /* Brun doré */
+    --color-secondary: #1f57e6; /* Bleu Dunder Mifflin */
+    --color-bg: #eff4fb; /* Blanc bleuté */
+    --color-text: #272226; /* Gris très foncé */
+    --color-accent: #fff9b1; /* Jaune pâle (Golden Ticket) */
 
     --color-white: #fff;
     --color-border: #d1d9e6;
+
+    /* Typo */
+    --font-body: "Open Sans", sans-serif;
+    --font-heading: "Oswald", "Open Sans", sans-serif;
+
+    /* Espacements (3 niveaux) */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
 
     /* Divers (border-radius, ombrages, transitions) */
     --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 12px;
 
-    --shadow-soft: 0 4px 8px rgba(0,0,0,0.06);
+    --shadow-soft: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 /* Reset basique */
@@ -46,7 +55,7 @@ html, body {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-body);
     background: var(--color-bg);
     color: var(--color-text);
     line-height: 1.6;
@@ -56,14 +65,14 @@ body {
 main {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
+    padding: var(--space-lg) var(--space-md);
 }
 
 /* Titres */
 h1, h2, h3, h4 {
-    font-family: "Oswald", "Open Sans", sans-serif;
+    font-family: var(--font-heading);
     color: var(--color-primary);
-    margin-top: 1.5rem;
+    margin-top: var(--space-lg);
 }
 
 h1 {
@@ -103,6 +112,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    color: var(--color-secondary);
+}
+
 /* Focus lors de survol au clavier pour l'accessibilité */
 a:focus-visible {
     outline: 2px solid var(--color-accent);
@@ -116,9 +129,7 @@ img {
 }
 
 /* Header et navigation principale */
-
-header,
-.site-header {
+header, .site-header {
     background: var(--color-secondary);
     color: var(--color-white);
     box-shadow: var(--shadow-soft);
@@ -128,7 +139,7 @@ header,
 .header-top {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: var(--space-md);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +155,7 @@ header,
 .main-nav ul {
     list-style: none;
     margin: 15px;
-    padding: 0.5rem;
+    padding: var(--space-sm);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -161,7 +172,7 @@ header,
 }
 
 .main-nav a:hover {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .main-nav a.active {
@@ -173,7 +184,7 @@ footer {
     background: #111827;
     color: var(--color-white);
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: var(--space-lg) var(--space-md);
     font-size: 1.25rem;
     margin-top: 2rem;
 }
@@ -197,8 +208,8 @@ footer a:hover {
 .homepage section {
     background: var(--color-white);
     border-radius: var(--radius-md);
-    margin-bottom: 1.5rem;
-    padding: 1rem;
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
     box-shadow: var(--shadow-soft);
 }
 
@@ -211,10 +222,17 @@ footer a:hover {
     border-left: 4px solid var(--color-primary);
 }
 
+.promo-section img {
+    max-width: 600px;
+    width: 100%;
+    margin: 1rem auto 0;
+    border-radius: var(--radius-md);
+}
+
 /* Grille des bestsellers */
 .bestsellers-grid {
     display: grid;
-    gap: 2rem;
+    gap: var(--space-lg);
 }
 
 .product-link {
@@ -229,7 +247,7 @@ footer a:hover {
     align-items: center; /* centre horizontalement */
 
     min-height: 260px; /* hauteur de la carte */
-    padding: 1rem; /* pour éviter que l’image colle aux bords */
+    padding: var(--space-md); /* pour éviter que l’image colle aux bords */
 }
 
 .product-link img {
@@ -240,27 +258,35 @@ footer a:hover {
 
 .product-link:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Page "Our company" */
 
 .company-section {
     background: white;
-    padding: 1rem;
-    border-radius: 1rem;          /* comme .product-category */
+    padding: var(--space-md);
+    border-radius: 1rem;
     box-shadow: var(--shadow-soft);
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-lg);
 }
 
 .company-section img {
+    max-width: 600px;
+    width: 100%;
     margin: 1rem auto 0;
     border-radius: var(--radius-md);
 }
 
 .office-gallery {
     display: grid;
-    gap: 1rem;
+    gap: var(--space-md);
+}
+
+.company-section p {
+    max-width: none;
+    margin: 1rem 0;
+    font-size: 1.1rem;
 }
 
 /* Page "Our products" */
@@ -269,7 +295,7 @@ footer a:hover {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 0.5rem;
+    gap: var(--space-sm);
     flex-wrap: wrap;
 }
 
@@ -288,22 +314,22 @@ footer a:hover {
 
 .product-category {
     background: white;
-    padding: 1rem;
+    padding: var(--space-md);
     border-radius: 1rem;
     box-shadow: var(--shadow-soft);
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-lg);
 }
 
 .product-list {
     list-style: none;
     padding: 0;
     display: grid;
-    gap: 1rem;
+    gap: var(--space-md);
 }
 
 .product-item {
     background: var(--color-bg);
-    padding: 1rem;
+    padding: var(--space-md);
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
     display: flex;
@@ -311,48 +337,56 @@ footer a:hover {
 }
 
 .product-item img {
-    margin: auto;          /* centre verticalement */
-    max-height: 240px;     /* espace respirant */
+    margin: auto; /* centre verticalement */
+    max-height: 240px; /* espace respirant */
     width: auto;
     display: block;
 }
 
-/* Page "Our team" */
+/* =========================
+   Page "Our team"
+   ========================= */
+
+/* Intro */
 .team-intro {
     background: white;
-    padding: 1rem;
+    padding: var(--space-md);
     border-radius: 1rem;
     box-shadow: var(--shadow-soft);
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-lg);
 }
 
+/* Départements : grandes cartes comme Products */
 .team-section {
     background: white;
-    padding: 1rem;
+    padding: var(--space-md);
     border-radius: 1rem;
     box-shadow: var(--shadow-soft);
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-lg);
 
-    /* Grille interne pour placer les employee-card */
     display: grid;
-    gap: 1rem;
+    gap: var(--space-md);
 }
 
+/* Titre département pleine largeur */
 .team-section > h2 {
     margin: 0 0 1rem;
     grid-column: 1 / -1;
 }
 
-/* Harmoniser les paragraphes dans ces cartes (évite le max-width: 65ch global) */
-.team-intro p, .team-section p, .employee-card p {
+/* Harmoniser les paragraphes dans ces cartes */
+.team-intro p,
+.team-section p,
+.employee-card p {
     max-width: none;
     margin: 1rem 0;
     font-size: 1.1rem;
 }
 
+/* Cartes employés */
 .employee-card {
     background: var(--color-bg);
-    padding: 1rem;
+    padding: var(--space-md);
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
     box-shadow: var(--shadow-soft);
@@ -364,7 +398,7 @@ footer a:hover {
 
 .employee-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* Images employées : tailles maximales */
@@ -385,7 +419,7 @@ footer a:hover {
 
 .coming-soon-message {
     background: white;
-    padding: 1.5rem;
+    padding: var(--space-lg);
     border-radius: 1rem;
     max-width: 650px;
     margin: 0 auto;
@@ -423,13 +457,17 @@ footer a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .role-sales,
-    .role-accounting,
-    .role-support,
-    .role-other {
-        display: grid;
+    /* Team : 2 colonnes */
+    .team-section {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+    }
+
+    /* Intro en 2 colonnes */
+    .team-intro {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        gap: var(--space-lg);
+        align-items: center;
     }
 }
 
@@ -440,17 +478,8 @@ footer a:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .role-sales,
-    .role-accounting,
-    .role-support,
-    .role-other {
+    /* Team : 3 colonnes */
+    .team-section {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .team-intro {
-        display: grid;
-        grid-template-columns: 2fr 1.5fr;
-        gap: 1.5rem;
-        align-items: center;
     }
 }
