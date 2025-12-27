@@ -5,7 +5,7 @@
 ### Concept
 - Thème choisi : site fictif de la société de vente de papier Dunder Mifflin (tiré de la série The Office).
 - Public cible : fans de la série, amateurs et amatrices de blagues internes à la série.
-- Objectifs du site : mettre en avant les différents personnages et la série en général, en faisant un site à l'humour décalé.
+- Objectifs du site : mettre en avant les différents personnages et l’univers de la série à travers un site web à l’humour décalé.
 
 ### Fonctionnalités prévues
 - Navigation : 
@@ -33,9 +33,9 @@
 
 ### Ressources utilisées
 - Plateforme utilisée :
-  -    OpenClassrooms, cours "Créez votre site web avec HTML5 et CSS3"
+  - OpenClassrooms, cours "Créez votre site web avec HTML5 et CSS3"
 - Vidéos / tutoriels suivis
-  -   Flexbox Froggy, jeu interactif pour maîtriser Flexbox
+  - Flexbox Froggy, jeu interactif pour maîtriser Flexbox
 
 ### Progression
 - Semaines 3–4 : choix du thème du site web, définition de la palette de couleurs, réflexion sur l’identité visuelle, premiers croquis / idées de structure
@@ -44,9 +44,8 @@
 - Semaines 9–10 : intégration complète des contenus textuels, ajout des images, attributs alt et title, début de la feuille de style CSS
 - Semaines 11–12 : CSS global (couleurs, typographies, espacements), mise en page avec Flexbox et Grid, menu horizontal, début du responsive design
 - Semaines 13–14 : responsive design complet, adaptation mobile / tablette / desktop, amélioration de l’expérience utilisateur, harmonisation graphique sur toutes les pages
-- Semaine 15 – Rendu final: optimisation du CSS, validation HTML et CSS, mise à jour du README
+- Semaine 15 – Rendu final: optimisation du CSS, validation HTML et CSS, mise à jour du README, publication finale du site
 
-Publication finale du site
 ---
 
 ## 3. 🛠️ Outils et méthodologie
@@ -76,7 +75,7 @@ Publication finale du site
     - Importée en local via @font-face
     - Fichier utilisé : /fonts/oswald-v57-latin-regular.woff2
     - Appliquée aux éléments h1, h2, h3, h4 pour créer une hiérarchie visuelle claire et dynamique.
-###
+
   - Texte : Open Sans
     - Importée en local via @font-face
     - Fichier utilisé : /fonts/open-sans-v44-latin-regular.woff2
@@ -86,22 +85,31 @@ Publication finale du site
 ## 4. ✅ Tests et validation
 
 ### Validation technique
-- HTML Validator : résultat …
-- CSS Validator : résultat …
-- PageSpeed Insights :  
-  - Performance : …/100  
-  - Accessibilité : …/100  
-  - Bonnes pratiques : …/100  
-  - SEO : …/100  
+- HTML Validator : résultat ✅
+- CSS Validator : résultat ✅
+- PageSpeed Insights mobile :  
+  - Performance : 89/100  
+  - Accessibilité : 95/100  
+  - Bonnes pratiques : 100/100  
+  - SEO : 100/100  
+- PageSpeed Insights bureau :
+    - Performance : 80/100
+    - Accessibilité : 95/100
+    - Bonnes pratiques : 100/100
+    - SEO : 100/100
+
+Les performances sont légèrement impactées par un CLS (Cumulative Layout Shift) élevé dû à l’absence de dimensions explicites sur certaines images, ce qui peut provoquer de légers décalages de mise en page au chargement.
+
+- Accessibilité (WAVE) : Un avertissement de contraste est signalé par WAVE sur la navigation principale (texte clair sur fond coloré). Ce choix est volontaire et assumé afin de respecter l’identité visuelle du site.
 
 ### Compatibilité
-- Navigateurs testés : Chrome …, Firefox ✅, Safari …
-- Appareils testés : mobile, tablette, desktop
+- Navigateurs testés : Chrome ✅, Firefox ✅, Safari ✅
+- Appareils testés : mobile ✅, tablette ✅, desktop ✅
 
 ### Accessibilité
 - Attributs alt : ✅
 - Hiérarchie des titres : ✅
-- Contraste couleurs : conforme WCAG
+- Contraste couleurs : globalement conforme, avec un avertissement WAVE sur la navigation principale lié à l’identité visuelle
 - Navigation clavier : testée
 - Zoom 200% : lisible
 
@@ -115,11 +123,11 @@ Publication finale du site
 
 ### Utilisation détaillée
 - Contenu généré avec l’IA : 
-  - j'ai généré la majorité du contenu des textes en anglais pour mon HTML, mais je m'en suis servie majoritairement comme outil de correction et de conseil pour cette partie HTML. En CSS, je me suis appuyée sur l’IA pour comprendre la mise en page, les sélecteurs et le responsive, puis j’ai adapté le code à mon projet.
+  - J'ai généré la majorité du contenu des textes en anglais pour mon HTML, mais je m'en suis servie majoritairement comme outil de correction et de conseil pour cette partie HTML. En CSS, je me suis appuyée sur l’IA pour comprendre la mise en page, les sélecteurs et le responsive, puis j’ai adapté le code à mon projet.
 - Explication et adaptation personnelle du code généré
-  - pour le HTML, l’intelligence artificielle m’a principalement servi à vérifier la validité et la cohérence de mon code, ainsi qu’à générer et reformuler les contenus textuels en anglais. La structure des pages, l’organisation sémantique et l’intégration des éléments ont été réalisées par moi-même, avec l’IA utilisée comme outil de contrôle et d’aide à la rédaction.
-  - pour le CSS, l’IA m’a aidée à comprendre certaines logiques de mise en page et de responsive design, notamment avec flexbox, grid et les media queries. Les propositions ont ensuite été adaptées, simplifiées ou modifiées afin de correspondre à l’identité visuelle du site et à mes choix personnels.
-  - l’utilisation de l’IA s’inscrit donc dans une démarche d’apprentissage et de compréhension des concepts, et non comme une solution clé en main.
+  - Pour le HTML, l’intelligence artificielle m’a principalement servi à vérifier la validité et la cohérence de mon code, ainsi qu’à générer et reformuler les contenus textuels en anglais. La structure des pages, l’organisation sémantique et l’intégration des éléments ont été réalisées par moi-même, avec l’IA utilisée comme outil de contrôle et d’aide à la rédaction.
+  - Pour le CSS, l’IA m’a aidée à comprendre certaines logiques de mise en page et de responsive design, notamment avec flexbox, grid et les media queries. Les propositions ont ensuite été adaptées, simplifiées ou modifiées afin de correspondre à l’identité visuelle du site et à mes choix personnels.
+  - L’utilisation de l’IA s’inscrit donc dans une démarche d’apprentissage et de compréhension des concepts, et non comme une solution clé en main.
 
 ### Proportion
 - Structure HTML : 80% personnel / 20% aidé
